@@ -1,0 +1,27 @@
+class Heroes:
+  def __init__(self,name,alias):
+    self.name = name
+    self.alias = alias
+
+    def spawn(self):
+      print("Spawn!")
+
+class Avengers(Heroes):
+  def spawn(self):
+    print("Avengers Assemble")
+
+class Xmen(Heroes):
+  def spawn(self):
+    print("To me, my Xmen")
+
+class FantasticFour(Heroes):
+  def spawn(self):
+    print("Let's go Fantastic!")
+
+avenger1 = Avengers("Tony Stark","Ironman")
+xmen1 = Xmen("Scott Summers","Cyclops")
+ff1 = FantasticFour("Reed Richards","Mr. Fantastic")
+
+avenger1.spawn()
+xmen1.spawn()
+ff1.spawn()
