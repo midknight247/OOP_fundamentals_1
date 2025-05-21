@@ -1,0 +1,36 @@
+class Animal:
+  # Corrected the constructor spelling from _init_ to __init__
+  def __init__(self,name,species):
+    self.name = name
+    self.species = species
+
+  def speak(self):
+    print("Animal Sound")
+
+  def introduce(self):
+    print(f"I am {self.name}, and I am a {self.species}.")
+
+
+class Lion(Animal):
+  def speak(self):
+    print("Roar! I'm a Lion")
+
+class Elephant(Animal):
+  def speak(self):
+    print("Trumpet! I'm an Elephant")
+
+class Monkey(Animal):
+  def speak(self):
+    print("O O A A! I'm monke")
+
+lion = Lion("Simba","Lion")
+lion.speak()
+lion.introduce()
+
+monkey = Monkey("Bob","Monkey")
+monkey.speak()
+monkey.introduce()
+
+elephant = Elephant("Jumbo","Elephant")
+elephant.speak()
+elephant.introduce()
